@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Connect</title>
+	 <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .navbar li {
+            margin: 0 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            display: block;
+        }
+        .navbar a.active,
+        .navbar a:hover {
+            background-color: #575757;
+            border-radius: 4px;
+        }
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .navbar ul {
+                flex-direction: column;
+                width: 100%;
+                display: none;
+            }
+            .navbar ul.show {
+                display: flex;
+            }
+            .navbar li {
+                width: 100%;
+                text-align: center;
+                margin: 5px 0;
+            }
+            .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.navbar ul');
+            menu.classList.toggle('show');
+        }
+    </script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <ul>
+            <li><a href="#Home" class="active">Home</a></li>
+            <li><a href="#profiles-section">Profiles</a></li>
+            <li><a href="#campus-communities-section">Campus Communities</a></li>
+            <li><a href="#groups-section">Groups</a></li>
+            <li><a href="#events-section">Events</a></li>
+            <li><a href="#chat-section">Chat</a></li>
+            <li><a href="#resources-section">Resources</a></li>
+            <li><a href="#about-us-section">About Us</a></li>
+        </ul>
+    </nav>
+	
+	 <div class="content">
+        <!-- Home Section -->
+        <section id="Home" class="home-section">
+            <h2>Welcome to Campus Connect</h2>
+            <p>Connect with students from different faculties and campuses.</p>
+            <div class="home-buttons">
+                <a href="Login.html" class="btn btn-login">Login</a>
+                <a href="Reg.html" class="btn btn-register">Register</a>
+            </div>
+        </section>
+    </div>
+	
+	<div class="content">
+        <!-- Profiles Section -->
+        <section id="profiles-section">
+            <h2>Profiles</h2>
+            <div class="search-bar">
+                <input type="text" placeholder="Search profiles...">
+                <button type="button">Search</button>
+            </div>
+            <div class="profiles-list">
+                <div class="profile-card">
+                    <h3>Samuel Sekwati</h3>
+                    <p>Faculty: Computer Science</p>
+                    <p>Interests: Web Development</p>
+                </div>
+                <div class="profile-card">
+                    <h3>Siyabonga Shaba</h3>
+                    <p>Faculty: Commerce</p>
+                    <p>Interests: Business Management</p>
+                </div>
+                <div class="profile-card">
+                    <h3>Xabiso Nxumalo</h3>
+                    <p>Faculty: Medicine</p>
+                    <p>Interests: Pharmaceutical Medicine</p>
+                </div>
+            </div>
+        </section>
+    </div>
+	
+	<div class="content">
+        <!-- Campus Communities Section -->
+        <section id="campus-communities-section">
+            <h2>Campus Communities</h2>
+            <div class="community-list">
+                <div class="community-card">
+                    <h3>Programming Club</h3>
+                    <p>Description: A community for programming enthusiasts</p>
+                    <p>Members: 100+</p>
+                </div>
+                <div class="community-card">
+                    <h3>Photography Society</h3>
+                    <p>Description: Capturing moments, one click at a time</p>
+                    <p>Members: 50+</p>
+                </div>
+            </div>
+        </section>
+    </div>
+	
+	<div class="content">
+        <!-- Groups Section -->
+        <section id="groups-section">
+            <h2>Groups</h2>
+            <div class="group-list">
+                <div class="group-card">
+                    <h3>Study Group - Computer Science</h3>
+                    <p>Description: Join us to study and collaborate on CS topics</p>
+                    <p>Members: 10+</p>
+                </div>
+                <div class="group-card">
+                    <h3>Art Appreciation Club</h3>
+                    <p>Description: Discuss and explore various forms of art</p>
+                    <p>Members: 20+</p>
+                </div>
+            </div>
+        </section>
+    </div>
+	
+	  <div class="content">
+        <!-- Events Section -->
+        <section id="events-section">
+            <h2>Events</h2>
+            <div class="event-list">
+                <div class="event-card">
+                    <h3>Guest Lecture on UI/UX Design</h3>
+                    <p>Date: May 20, 2024</p>
+                    <p>Time: 3:00 PM - 5:00 PM</p>
+                    <p>Location: Lecture Hall A</p>
+                </div>
+                <div class="event-card">
+                    <h3>Programming Competition</h3>
+                    <p>Date: June 5, 2024</p>
+                    <p>Time: 10:00 AM - 4:00 PM</p>
+                    <p>Location: Computer Lab B</p>
+                </div>
+            </div>
+        </section>
+    </div>
+	
+	 <div class="content">
+        <!-- Chat Section -->
+        <section id="chat-section">
+            <h2>Chat</h2>
+            <div class="chat-list">
+                <div class="chat-room-card">
+                    <h3>General Chat</h3>
+                    <p>Description: Chat about anything and everything!</p>
+                    <p>Participants: 50+</p>
+                </div>
+                <div class="chat-room-card">
+                    <h3>Study Group Chat - Computer Science</h3>
+                    <p>Description: Discuss assignments, projects, and more</p>
+                    <p>Participants: 10</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="chat-section" class="chat-section">
+            <div class="chat-container">
+                <div class="online-users" id="online-users">
+                    <h3>Online Users</h3>
+                    <ul id="online-users-list">
+                       
+                    </ul>
+                </div>
+                <div class="chat-box" id="chat-box">
+                   
+                </div>
+                <form id="chat-form">
+                    <input type="text" id="chat-input" placeholder="Type a message..." autocomplete="off" required>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </div>
+	
+	 <div class="content">
+        <!-- Resources Section -->
+        <section id="resources-section">
+            <h2>Resources</h2>
+            <div class="resource-list">
+                <div class="resource-card">
+                    <h3>Programming Tutorial</h3>
+                    <p>Description: Learn the basics of programming</p>
+                    <p>Link: <a href="#">https://www.youtube.com/watch?v=kqtD5dpn9C8</a></p>
+                </div>
+                <div class="resource-card">
+                    <h3>Research Paper Database</h3>
+                    <p>Description: Access a collection of research papers</p>
+                    <p>Link: <a href="#">https://www.ajol.info/index.php/mmj/article/view/146318</a></p>
+                </div>
+            </div>
+        </section>
+    </div>
+	
+	<div class="content">
+        <!-- About Us Section -->
+        <section id="about-us-section">
+            <h2>About Us</h2>
+            <div class="about-us-content">
+                <p>We aimed at facilitating connections among 
+				university/college students across different faculties and campuses. Recognizing the importance of student networking beyond disciplinary boundaries, 
+				our team embarked on a journey to create a platform that fosters collaboration, communication, and community among students. Through collective brainstorming sessions,
+				iterative design processes, and shared feedback, 
+				we have crafted a website tailored to meet the diverse needs and preferences of our fellow students.</p>
+         </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact-section">
+            <h2>Contact Us</h2>
+            <div class="contact-form">
+                
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Twitter</a>
+                <a href="#" class="social-link">Instagram</a>
+            </div>
+            <p class="copyright">&#169; 2024 Campus  Connect</p>
+        </div>
+    </footer>
+	
+	
+	
+	<script src="script.js"></script>
+</body>
+</html>

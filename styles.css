@@ -1,0 +1,593 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .home-section {
+                padding: 30px 10px;
+            }
+            .home-section h2 {
+                font-size: 1.5em;
+            }
+            .home-section p {
+                font-size: 1em;
+            }
+            .btn {
+                padding: 8px 16px;
+                margin: 4px;
+            }
+        }
+		
+		/*Home*/
+		.content {
+    position: relative;
+}
+
+.home-section {
+    position: relative;
+    height: 100vh;
+    background-image: url('Campus.PNG'); /* Replace 'your-background-image.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-section:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)); */
+}
+
+.home-content {
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.home-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.home-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+		/*Profiles*/
+		.content {
+    padding: 20px;
+}
+
+#profiles-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+#profiles-section h2 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+.search-bar {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    width: 300px;
+    max-width: 80%;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: 1px solid #007BFF;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+.profiles-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.profile-card h3 {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    #profiles-section {
+        padding: 30px 10px;
+    }
+
+    #profiles-section h2 {
+        font-size: 1.5em;
+    }
+
+    .search-bar input {
+        width: 200px;
+    }
+
+    .profile-card {
+        width: 100%;
+    }
+}
+
+/*Campus community*/
+.content {
+    padding: 20px;
+}
+
+#campus-communities-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+#campus-communities-section h2 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+.community-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.community-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.community-card h3 {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    #campus-communities-section {
+        padding: 30px 10px;
+    }
+
+    #campus-communities-section h2 {
+        font-size: 1.5em;
+    }
+
+    .community-card {
+        width: 100%;
+    }
+}
+
+/*Groups*/
+.content {
+    padding: 20px;
+}
+
+#groups-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+#groups-section h2 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+.group-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.group-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.group-card h3 {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    #groups-section {
+        padding: 30px 10px;
+    }
+
+    #groups-section h2 {
+        font-size: 1.5em;
+    }
+
+    .group-card {
+        width: 100%;
+    }
+}
+
+/*Events*/
+.content {
+    padding: 20px;
+}
+
+#events-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+#events-section h2 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.event-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.event-card h3 {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    #events-section {
+        padding: 30px 10px;
+    }
+
+    #events-section h2 {
+        font-size: 1.5em;
+    }
+
+    .event-card {
+        width: 100%;
+    }
+}
+
+/*chat*/
+.content {
+    padding: 20px;
+}
+
+#chat-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+#chat-section h2 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+.chat-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.chat-room-card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: left;
+    width: 300px;
+    max-width: 100%;
+}
+
+.chat-room-card h3 {
+    margin-top: 0;
+}
+
+.chat-room-card p {
+    margin: 0;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.online-users {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.online-users h3 {
+    margin-top: 0;
+}
+
+#online-users-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.chat-box {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+#chat-form {
+    display: flex;
+    width: 100%;
+}
+
+#chat-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+#chat-form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: 1px solid #007BFF;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#chat-form button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    #chat-section {
+        padding: 30px 10px;
+    }
+
+    #chat-section h2 {
+        font-size: 1.5em;
+    }
+
+    .chat-room-card {
+        width: 100%;
+    }
+
+    .chat-container {
+        padding: 10px;
+    }
+
+    #chat-form button {
+        padding: 10px;
+    }
+}
+
+.chat-message {
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+.chat-message.me {
+    background-color: #007BFF;
+    color: white;
+    align-self: flex-end;
+}
+
+.chat-message.them {
+    background-color: #f1f1f1;
+    color: black;
+    align-self: flex-start;
+}
+
+/*resources*/
+.content {
+    padding: 20px;
+}
+
+#resources-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+#resources-section h2 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+.resource-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.resource-card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: left;
+    width: 300px;
+    max-width: 100%;
+}
+
+.resource-card h3 {
+    margin-top: 0;
+}
+
+.resource-card p {
+    margin: 5px 0;
+}
+
+.resource-card a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.resource-card a:hover {
+    color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    #resources-section {
+        padding: 30px 10px;
+    }
+
+    #resources-section h2 {
+        font-size: 1.5em;
+    }
+
+    .resource-card {
+        width: 100%;
+    }
+}
+
+/*About & footer*/
+.content {
+    padding: 20px;
+}
+#about-us-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+#about-us-section h2 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+.about-us-content {
+    line-height: 1.6;
+}
+
+.contact-form {
+    /* Add styles for the contact form */
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-link {
+    display: inline-block;
+    margin: 0 10px;
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #0056b3;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #666;
+}
